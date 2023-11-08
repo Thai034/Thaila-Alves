@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd; /* cinza claro */
+}
+
+nav#menu {
+    display: block; /* transformar tudo o que é menu em bloco */
+}
+
+nav#menu ul {
+    list-style: none; /* remover marcadores da lista */
+    text-transform: uppercase; /* converter para maiúsculas */
+    position: absolute; /* para que o menu possa ser colocado no topo, é preciso virar absoluto */
+    top: -5px; /* posicionado ao topo. valor negativo para empurrar além da borda */
+    right: 25px; /* posicionado à direita */
+}
+
+nav#menu li {
+    display: inline-block; /* colocar os itens lado a lado */
+    background-color: #ddd; /* cor de fundo - cinza */
+    padding: 10px; /* aumentar o espaçamento interno da caixa cinza ( de fora pra dentro, puxando pra dento/ dentro*/
+    margin: 2px; /* aumentar o espaçamento externo da caixa cinza ( de dentro pra fora, empurrando pra fora ) */
+    transition: background-color 1.5s; /* tempo da transição do background-color */
+}
+
+/* hover para efeito do mouse ao passar sobre o li */
+nav#menu li:hover {
+    background-color: #606060; /* cinza escuro */
+}
+
+nav#menu h1 {
+    display: none; /* ocultar a tag h1 que está em nav id menu */
+}
+
+nav#menu a {
+    color: #000; /* preto */
+    text-decoration: none; /* remove o sublinhado do link */
+}
+/* ao passar o mouse sobre o link (tag a) */
+nav#menu a:hover {
+    color: #fff; /* branco */
+    text-decoration: underline; /* sublinhado */
+}
+
+img#icone {
+    position: absolute;
+    left: 750px;
+    top: 95px;
+}
+
+div#interface {
+    position: relative;/* Transforma a div em um container */
+    background-color: #fff; /* branco */
+    width: 900px;
+    margin: -23px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5); /* sombra */
+    padding: 10px; /* espaçamento interno da div */
+}
+
+hgroup#noticia-principal {
+    font-family: 'fontelogo', sans-serif;
+    font-size: 20px;
+    color:# 606060;
+    margin: 0px
+}
+
+hgroup#noticia-principal h2 {
+     font-size: 13pt;
+     color: #cecece; /* Cinza muito claro*/
+     background-color: #fff; /*Branco*/
+     margin: 0px;
+     margin-left: -10px;
+
+}
+
+hgroup#noticia-principal h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+.direita { /* pra pegar o class no index você precisa substituir para o ponto*/
+     text-align: right;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+form {
+    width: 500px; /*largura*/
+    margin: auto; /* centralizar*/
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal; /* remover qualquer negrito que existe*/
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, 0.7); /*branco e opacidade 70% */
+}
+
+input:hover, textarea:hover {
+    background-color: #ddd;
+}
+
+legend {
+    color: #888; /* cinza escuro*/
+    font-weight: bolder;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece; /* cinza claro*/
+    margin: 20px;
+}
+
+fieldset#idSexo {
+    width: 150px;
+}
+
+fieldset#idUsuario {
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#idEndereco {
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#idMensagem {
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+fieldset#idPedido {
+    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+}
+
+
+
+
+
+
+
+

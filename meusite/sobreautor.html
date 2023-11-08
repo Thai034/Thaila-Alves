@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre o Autor</title>
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+    <link rel="stylesheet" type="text/css" href="sobreautor.css">
+</head>
+
+
+
+<body>
+  <div id="interface">
+      <header id="cabecalho">
+            <hgroup>
+            <img src="imagens/imagemtec.png">
+                <h1>InformTec</h1>
+                <hr>
+            </hgroup>
+             <h1>Bem vindo!</h1>           <ul> <li><a href="index.html">Página Inicial</a></li></ul>
+        </header>
+
+      <h2>Sobre a autora</h2>
+
+    <img id="foto" src="imagens/imgthailafoto.PNG"> <br>
+      <p id="direita"> Meu nome é Thaila, tenho 15 anos, moro no Rio de Janeiro e criei meu priemiro site no dia 13/06/2023.<br>
+   Ano passado fiz uma prova para a escola Firjan Sesi Senai, na Unidade do Maracanã, me dediquei muito para essa prova, pois estava louca para entrar em uma escola com curso técnico.<br>
+    Quando era pequena sempre gostei de tecnologia e até hoje amo. Espero nunca sair dessa vida apesar de ter outros planos para o futuro, mas honestamente estou muito boa no que estou fazendo.</p>
+<hr>
+
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('idQtd').value);
+            tot = qtd * 1500; /* cada google glass custa 1500 dolares*/
+            document.getElementById('idTot').value = tot;
+        }
+    </script>
+
+<script language="javascript" src="_javascript/funcoes.js"></script>
+
+      <h2>Fale Conosco</h2>
+    <form method="post" id="idContato" action="mailto:thailasalvees@gmail.com" oninput="calc_total()">
+
+            <fieldset id="idUsuario"> <!-- fieldset = fazer tabela -->
+                <legend>identificação do usuário</legend> <!-- legend = tag para legenda da tabela "titulo" -->
+                <p><label for="idnome">Nome:</label> <input type="text" name="nnome" id="idnome" size="20" maxlength="40" placeholder="Nome Completo"> </p> <!-- size= tamahno da caixa, maxlength= maximo de caracteres, placeholder= palavra que fica dentro da caixa -->
+                    <p><label for="idsenha">Senha:</label> <input type="password" name="nsenha" id="idsenha" size="8" maxlength="8" placeholder="Até 8 digitos"> </p>
+                     <p><label for="idemail">E-mail:</label> <input type="email" name="nemail" id="idemail" size="20" maxlength="40"> </p>
+                    <fieldset id="idsexo">
+                        <legend>Sexo:</legend>
+                        <input type="radio" name="nsexo" id="idmasc"> <label for="idmasc">Masculino</label> <br>
+                        <input type="radio" name="nsexo" id="idfem"> <label for="idfem">Feminino</label> <br>
+                    </fieldset>
+                <p><label for="idnasc">Data de Nascimento:</label><input type="date" name="nnasc" id="idnasc"> </p>
+            </fieldset>
+
+            <fieldset id="idendereco">
+                <legend>Endereço do Usuário</legend>
+                    <p><label for="idrua"> Logradouro:</label><input type="text" name="nrua" id="idrua" size="13" maxlength="80" placeholder="Rua, Av, Travessa..."></p>
+                    <p><label for="idnum">Número:</label><input type="number" name="nnum" id="idnum" min="0" max="9999"></p>
+
+            </fieldset>
+
+            <fieldset id="idmensagem">
+                <legend>Mensagem do Usuário</legend>
+                    <p><label for="idmsg">Mensagem:</label>
+                         <textarea name="nmsg" id="idmsg" cols="45" rows="5" maxlength="250" placeholder="Deixe aqui sua mensagem"></textarea>
+                      </p>
+            </fieldset>
+
+            <input type="image" src="imagens/botao-enviar.png" name="nenviar">
+    </form>
+
+       <footer id="rodape">
+        <p>Copyright 2023 - by Thaila Alves<br>
+            <a href="https://www.facebook.com/thaila.alves.3110" target="_blank"> Facebook</a> |
+            <a href="https://www.instagram.com/euu__thaila/" target="_blamk"> Instagram</a></p>
+         </footer>
+</body>
+</html>

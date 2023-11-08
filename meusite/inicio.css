@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+    font-family: 'FonteLogo';
+}
+
+img#icone {
+    position: relative;
+    width: 600px;
+    box-shadow: #fff;
+}
+
+img#icone {
+    position: relative;
+    left: 130px;
+    border: 8px solid black; /* solid hidden dotted dashed double groove ridge inset outset */
+    box-shadow: 2px 2px 4px black; /* horizontal vertical difusão cor da sombra */
+}
+
+article h2 {
+    font-size: 13pt;
+    color: #fff;
+    background-color: #137fd9;
+    padding: 5px 0px 5px 10px; /* top, right, botton, left*/
+    margin: 10px 0px 10px 0px;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #084D6E; /* cinza claro */
+}
+
+div#interface {
+    position: relative;/* Transforma a div em um container */
+    background-color: #fff; /* branco */
+    width: 900px;
+    margin: -23px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5); /* sombra */
+    padding: 10px; /* espaçamento interno da div */
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo';
+    color: #00009C;
+    font-size: 28pt;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px; /*quando quiser mexer na margem so de baixo usa-se bottom*/
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #4D4DFF; /*Cinza claro*/
+    padding: 0px;
+    margin-top: 0px;
+}
+
+hgroup h1 {
+       position: absolute; /* para que o menu possa ser colocado no topo, é preciso virar absoluto */
+        top: 50px; /* posicionado ao topo. valor negativo para empurrar além da borda */
+         left: 400px; /* posicionado à direita */
+}
+
+ul {
+    text-transform: uppercase; /* converter para maiúsculas */
+    top: -5px; /* posicionado ao topo. valor negativo para empurrar além da borda */
+    right: 25px; /* posicionado à direita */
+ }
+
+ul {
+    padding: 20px;
+	width: 390px;
+	line-height: 30px;
+	background: #ADD8E6;
+}
+
+ul li {
+	text-indent: 20px; /* text-align: center */
+	list-style:none;
+	line-height: 36px;
+}
+
+ul li a{
+	color: #333;
+	text-decoration:none;
+	text-transform:uppercase;
+	display:block;
+	 transition: background-color 1.3s;
+}
+ul li a:hover{
+	color:054F77;
+	background-color:#00F;
+}
+
+h3 {
+    color: 054F77;
+    text-align: center;
+}
+
+table#salarios {
+    border: 1px solid #606060;
+    border-spacing: 0px; /* espaçamento entre bordas*/
+    margin: auto; /*centralizar a tabela*/
+}
+
+table#salarios td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#salarios td.ce {  /* (. = class)*/
+    background-color: #606060;
+    color: #fff; /* branco*/
+    vertical-align: top;
+    text-align: right;
+    font-weight: bolder; /* negrito*/
+}
+
+table#salarios td.cd {
+    background-color: #cecece; /*cinza mais claro*/
+}
+
+table#salarios caption {
+    color: #888; /* cor da fonte: cinza*/
+    font-size: 13pt; /* tamanho da fonte*/
+    font-weight: bolder; /* negrito*/
+}
+
+table#salarios caption span { /*quero pegar o conteúdo que está dentro do span, que está dentro do caption, que esta dentro da id, table, que está dentro da tabela no index.html*/
+
+    display: block; /*trasforma o objeto em bloco (se desprende)*/
+    float: right; /* flutuar para a direita, mas para isso precisa se desprender, logo usamos o display antes do float*/
+    font-size: 6pt;
+    margin-top: 10px;
+}
+
+/* apenas separar um do outro*/
+
+table#salarios2 {
+    border: 1px solid #606060;
+    border-spacing: 0px; /* espaçamento entre bordas*/
+    margin: auto; /*centralizar a tabela*/
+}
+
+table#salarios2 td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#salarios2 td.ce {  /* (. = class)*/
+    background-color: #606060;
+    color: #fff; /* branco*/
+    vertical-align: top;
+    text-align: right;
+    font-weight: bolder; /* negrito*/
+}
+
+table#salarios2 td.cd {
+    background-color: #cecece; /*cinza mais claro*/
+}
+
+table#salarios2 caption {
+    color: #888; /* cor da fonte: cinza*/
+    font-size: 13pt; /* tamanho da fonte*/
+    font-weight: bolder; /* negrito*/
+}
+
+table#salarios2 caption span { /*quero pegar o conteúdo que está dentro do span, que está dentro do caption, que esta dentro da id, table, que está dentro da tabela no index.html*/
+
+    display: block; /*trasforma o objeto em bloco (se desprende)*/
+    float: right; /* flutuar para a direita, mas para isso precisa se desprender, logo usamos o display antes do float*/
+    font-size: 6pt;
+    margin-top: 10px;
+}
+
+/* apenas separar um do outro*/
+
+table#salarios3 {
+    border: 1px solid #606060;
+    border-spacing: 0px; /* espaçamento entre bordas*/
+    margin: auto; /*centralizar a tabela*/
+}
+
+table#salarios3 td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#salarios3 td.ce {  /* (. = class)*/
+    background-color: #606060;
+    color: #fff; /* branco*/
+    vertical-align: top;
+    text-align: right;
+    font-weight: bolder; /* negrito*/
+}
+
+table#salarios3 td.cd {
+    background-color: #cecece; /*cinza mais claro*/
+}
+
+table#salarios3 caption {
+    color: #888; /* cor da fonte: cinza*/
+    font-size: 13pt; /* tamanho da fonte*/
+    font-weight: bolder; /* negrito*/
+}
+
+table#salarios3 caption span { /*quero pegar o conteúdo que está dentro do span, que está dentro do caption, que esta dentro da id, table, que está dentro da tabela no index.html*/
+
+    display: block; /*trasforma o objeto em bloco (se desprende)*/
+    float: right; /* flutuar para a direita, mas para isso precisa se desprender, logo usamos o display antes do float*/
+    font-size: 6pt;
+    margin-top: 10px;
+
+}
+
+footer#rodape {
+    margin: 10px auto 0px auto;
+    /*clear: both;*/
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+

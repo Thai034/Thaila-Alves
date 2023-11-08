@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd; /* cinza claro */
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+     list-style: none; /* remover marcadores da lista */
+    text-transform: uppercase; /* converter para maiúsculas */
+    position: absolute; /* para que o menu possa ser colocado no topo, é preciso virar absoluto */
+    top: -5px; /* posicionado ao topo. valor negativo para empurrar além da borda */
+    right: 25px; /* posicionado à direita */
+}
+
+article h1 {
+    font-size: 20px;
+    color: #606060;
+    padding: 5px 0px 5px 10px;
+    margin: -10px
+}
+
+div#interface {
+    position: relative;/* Transforma a div em um container */
+    background-color: #fff; /* branco */
+    width: 900px;
+    margin: -23px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5); /* sombra */
+    padding: 10px; /* espaçamento interno da div */
+}
+
+div img#noticia-principal {
+    width: 700px;
+    height: 450px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+img#noticia-principal {
+    margin: 80px;
+}
+
+video#videozinho {
+    position: absolute;
+    bottom: 150px;  /* distancia que ele está do "chão"*/
+    width: 350px;
+    margin: 140px;
+}
+
+audio#audiozinho {
+    position: absolute;
+    width: 230px;
+    bottom: 65px;
+    right: 50px;
+    padding: 95px;
+}
+
+
+footer#rodape p {
+    text-align: center;
+}
+
